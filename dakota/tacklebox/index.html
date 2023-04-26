@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div id="top">
+            <p>This is to test a minecraft-style button with a slightly more complex look</p>
+            <p>It's broken down into left, middle/text and right side</p>
+            <p>Each part has its set of images for normal, hovered on and being pressed</p>
+            <p>It's done this way because the middle part can be as long as required for the text inside, but the height is fixed and the left and right edges are also fixed</p>
+            <div>
+                <button type="button" class="mc-button">
+                    <div class="before"></div><div class="text">
+                        Test button
+                    </div><div class="after"></div>
+                </button>
+            </div>
+        </div>
+        <div id="biomeSelector">
+            Select the biome:
+            <div id="options">
+                <div>
+                    <label>
+                        <input type="radio" name="biome" value="biome-docks" checked="checked" onclick="changeSelectedBiome(this);" /> Docks
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="biome" value="biome-cliffs" onclick="changeSelectedBiome(this);" /> Cliffs
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="biome" value="biome-lake" onclick="changeSelectedBiome(this);" /> Lake
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="biome" value="biome-beach" onclick="changeSelectedBiome(this);" /> Beach
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="biome" value="biome-river" onclick="changeSelectedBiome(this);" /> River
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="biome" value="biome-reef" onclick="changeSelectedBiome(this);" /> Reef
+                    </label>
+                </div>
+            </div>
+            <br />
+            <div>
+                <button type="button" class="test" onclick="clearSelection();">
+                    Clear selection
+                </button>
+            </div>
+        </div>
+        <div id="main">
+            <div id="row1">
+                <!-- For more clickable areas just copy and paste the line below however many times in the desired row -->
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+            </div>
+            <div id="row2">
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+            </div>
+            <div id="row3">
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+                <a class="link" href="javascript:;" onclick="toggleself(this);"></a>
+            </div>
+        </div>
+        <div id="debug">
+            <div>
+                Debug settings:
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" onclick="toggleVisibilityAreas();" />
+                    View clickable areas
+                </label>
+            </div>
+        </div>
+    </body>
+</html>
